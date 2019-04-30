@@ -3,7 +3,7 @@ import App from "./App.vue";
 import "./assets/statics/site/css/style.css";
 import VueRouter from "vue-router";
 import index from "../src/components/index.vue";
-
+import detail from "./components/detail.vue"
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
@@ -14,6 +14,10 @@ const routes = [
   {
     path: "/index",
     component: index
+  },
+  {
+    path: "/detail",
+    component: detail
   }
 ];
 const router = new VueRouter({
